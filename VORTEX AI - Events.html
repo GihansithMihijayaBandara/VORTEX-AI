@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VORTEX AI - Events</title>
+  <style>
+    :root {
+      --primary: #3b82f6; /* Vortex AI blue */
+      --accent: #6366f1;
+      --bg: #f9fafb;
+      --text: #1f2937;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .events-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .event-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+    .event-card:hover {
+      transform: translateY(-4px);
+    }
+    .event-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .event-content {
+      padding: 1.2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .event-title {
+      font-size: 1.4rem;
+      margin: 0 0 0.5rem;
+      color: var(--primary);
+    }
+    .event-date {
+      color: #6b7280;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .event-description {
+      flex-grow: 1;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .event-button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .event-button:hover {
+      background: var(--primary);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #dbeafe;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VORTEX AI Events</h1>
+    <p>Discover upcoming AI conferences, workshops, and networking sessions</p>
+  </header>
+
+  <section class="events-container">
+    <div class="event-card">
+      <img src="https://bstglobal.com/wp-content/uploads/2024/05/AI-Summit-2024_Johnathan_Revised.jpg" alt="AI Conference">
+      <div class="event-content">
+        <h2 class="event-title">VORTEX AI Summit 2025</h2>
+        <p class="event-date">August 15, 2025</p>
+        <p class="event-description">Meet global AI leaders to discuss the future of machine learning and generative AI.</p>
+        <a class="event-button" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://bkr-review.com/wp-content/uploads/2024/01/REVIEW-1-1.png" alt="AI Workshop">
+      <div class="event-content">
+        <h2 class="event-title">Generative AI Workshop</h2>
+        <p class="event-date">September 5, 2025</p>
+        <p class="event-description">A hands-on workshop covering prompt engineering and advanced AI deployment strategies.</p>
+        <a class="event-button" href="#">Register</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://miro.medium.com/max/1400/1*pT24lXqcgG99f5aN2yf6Ng.jpeg" alt="Networking Night">
+      <div class="event-content">
+        <h2 class="event-title">AI Networking Night</h2>
+        <p class="event-date">October 20, 2025</p>
+        <p class="event-description">Connect with researchers, engineers, and enthusiasts working on cutting-edge AI projects.</p>
+        <a class="event-button" href="#">Sign Up</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 VORTEX AI. All rights reserved.
+  </footer>
+</body>
+</html>
+
